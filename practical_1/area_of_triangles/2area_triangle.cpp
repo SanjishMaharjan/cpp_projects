@@ -1,4 +1,4 @@
-//Program to calculate the area of triangle()=sqrt(s(s-a)(s-b)(s-c)).
+//Program to calculate the area of triangle=sqrt(s(s-a)(s-b)(s-c)).
                        //2nd part
 
 #include<iostream>
