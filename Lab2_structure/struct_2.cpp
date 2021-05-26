@@ -15,11 +15,10 @@ struct student
  int main()
  {
 
-    cout<< "Enter student's Details" <<endl;
-
     for(int i=0 ;i < 3 ;i++)
 
     {
+    cout<<"Enter the details of the student "<<i+1<<": "<<endl;
     cout<< "Enter name of the student "<<endl;
     cin>> s[i].name;
     cout<< "Enter roll no of the student "<<endl;
@@ -28,10 +27,10 @@ struct student
     cin>> s[i].marks;
     }
 
-    cout<< " The details of the student is "<<endl;
 
     for(int i=0 ;i < 3 ;i++)
     {
+    cout<< " The details of the student is "<<i+1<<endl;
     cout<<"Name "<<s[i].name<<endl;
     cout<<"Roll number "<<s[i].roll<<endl;
     cout<<"Marks "<<s[i].marks<<endl;
