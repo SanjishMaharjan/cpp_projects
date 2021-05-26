@@ -7,6 +7,7 @@
 struct student
 {
     char name[50];
+    char address[50];
     int roll;
     float marks;
 };
@@ -17,6 +18,8 @@ struct student
     cout<< "Enter student's Details" <<endl;
     cout<< "Enter name of the student "<<endl;
     cin>> s.name;
+    cout<< "Enter address of the student "<<endl;
+    cin>> s.address;
     cout<< "Enter roll no of the student "<<endl;
     cin>> s.roll;
     cout<< "Enter marks of the student "<<endl;
@@ -25,6 +28,7 @@ struct student
     cout<< " The details of the student is "<<endl;
     cout<<"Name "<<s.name<<endl;
     cout<<"Roll number "<<s.roll<<endl;
+    cout<<"Address "<< s.address<< endl;
     cout<<"Marks "<<s.marks<<endl;
 
 return 0;
