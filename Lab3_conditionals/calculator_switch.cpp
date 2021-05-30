@@ -15,16 +15,16 @@ int main()
     switch (a)
     {
     case '+':
-        cout<<"num1" <<"+"<< "num2 = "<< num1+num2 << endl;
+        cout<< num1 <<"+"<< num2 <<" = "<< num1+num2 << endl;
         break;
     case '-':
-        cout<<"num1" <<"-"<< "num2 = "<< num1-num2 << endl;
-        break;
+        cout<< num1 <<"-"<< num2 << " = "<< num1-num2 << endl;
+        break; 
     case '*':
-        cout<<"num1" <<"*"<< "num2 = "<< num1*num2 << endl;
+        cout<< num1 <<"*"<< num2 << " = "<< num1*num2 << endl;
         break;
     case '/':
-        cout<<"num1" <<"/"<< "num2 = "<< num1/num2 << endl;
+        cout<< num1 <<"/"<< num2 << "=" << num1/num2 << endl;
         break;
     default:
         cout<<"Please Select a valid operator!!!!" << endl;
