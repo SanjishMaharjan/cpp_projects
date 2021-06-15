@@ -11,7 +11,7 @@ class Employee
         int ID;
         string name;
         double Salary= 25000;
-        void details(){
+       void details(){
             cout<<"Enter your ID "<<endl;
             cin>>ID;
             cout<<"Enter your name "<<endl;
@@ -27,17 +27,13 @@ class Employee
 
 int main()
 {
- Employee e1,e2,e3,e4,e5;
-    e1.details();
-    e1.display();
-    e2.details();
-    e2.display();
-    e3.details();
-    e3.display();
-    e4.details();
-    e4.display();
-    e5.details();
-    e5.display();
+ Employee e[4];
+ for(int  i = 0; i < 5; i++)
+ {
+   e[i].details();
+   e[i].display();
+ } 
+ 
 
 
 return 0;
