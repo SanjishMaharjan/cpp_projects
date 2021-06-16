@@ -7,10 +7,16 @@ using namespace std;
 class Employee
 {
    
-    public :
+    private :
         int ID;
         string name;
         double Salary= 25000;
+    public :
+       /* void getdetails(int ID1,string name1,double Salary1){
+            ID=ID1;
+            name=name1;
+            Salary=Salary1;
+        }*/
        void details(){
             cout<<"Enter your ID "<<endl;
             cin>>ID;
@@ -18,9 +24,9 @@ class Employee
             cin>>name;
         }
         void display(){
-            cout<<"ID\t "<<ID<<endl;
-            cout<<"Name\t "<<name<<endl;
-            cout<<"Salary\t "<<Salary<<endl;
+            cout<<"ID "<<ID;
+            cout<<" \tName "<<name;
+            cout<<" \tSalary "<<Salary;
         }
 
 };
@@ -30,6 +36,7 @@ int main()
  Employee e[4];
  for(int  i = 0; i < 5; i++)
  {
+   cout<<"\nEnter details of employee "<<i+1<<endl; 
    e[i].details();
    e[i].display();
  } 
