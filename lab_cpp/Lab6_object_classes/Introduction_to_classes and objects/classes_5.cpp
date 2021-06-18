@@ -23,7 +23,7 @@ void display(double rate=0.15){
 };
 int main()
 {
- simple_interest s1;   
+ simple_interest s1;  
  s1.input();
  s1.display();
 return 0;
