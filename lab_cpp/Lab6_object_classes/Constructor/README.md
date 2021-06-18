@@ -1,12 +1,12 @@
-#Constructor Overloading
+# Constructor Overloading
 Constructors can be overloaded in a similar way as function overloading.
 
 In C++, We can have more than one constructor in a class with same name, as long as each has a different list of arguments. This concept is known as Constructor Overloading and is quite similar to function overloading. ... A constructor is called depending upon the number and type of arguments passed.
 
 Overloaded constructors have the same name (name of the class) but the different number of arguments. Depending upon the number and type of arguments passed, the corresponding constructor is called.
 
-Example
-//Program to understand constructor overloading
+# Example
+## //Program to understand constructor overloading
 
 #include<iostream>
 using namespace std;
@@ -44,7 +44,7 @@ int main()
 return 0;
 }
 
-The Output seems like :
+## The Output seems like :
 Product of two integers = 2,5
 10
 Product of integer and double = 4,5.886
