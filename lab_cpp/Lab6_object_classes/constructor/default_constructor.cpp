@@ -16,7 +16,7 @@ int main()
 {
 //Default constructor is called automatically when object is created
  construct c;
- cout<<"a: " <<c.a <<endl;   
+ cout<<"a: " <<c.a <<endl; //printing the value  
  cout<<"b: " <<c.b <<endl;   
 
 return 0;
