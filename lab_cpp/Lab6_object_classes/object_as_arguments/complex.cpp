@@ -33,18 +33,17 @@ class Complex {
 int main()
 {
 	
-	Complex C8(2,5);   // First Complex number
-	Complex C6(9, 5);  // Second Complex number
+	Complex C1st(2,5);   // First Complex number
+	Complex C2nd(9, 5);  // Second Complex number
 	Complex C3;    // To store the sum of numbers
-			//printing value of complex numbers
-	cout<<"First complex is "<<C8.real<<" + i"<< C8.imaginary<<endl;
-	cout<<"Second complex is "<<C6.real<<" + i"<< C6.imaginary<<endl;
 	
-	C3 = C3.addComp(C8, C6); // calling addComp() method
-
+	//printing value of complex numbers
+		cout<<"First complex is "<<C1st.real<<" + i"<< C1st.imaginary<<endl;
+		cout<<"Second complex is "<<C2nd.real<<" + i"<< C2nd.imaginary<<endl;
+	
+	C3 = C3.addComp(C1st, C2nd); // calling addComp() method
 	// printing the sum
-	cout<<"Sum of complex number : "<< C3.real << " + i"	<< C3.imaginary;
-
-     return 0;			
+		cout<<"Sum of complex number : "<< C3.real << " + i"	<< C3.imaginary;
+    return 0;			
 }
 					
