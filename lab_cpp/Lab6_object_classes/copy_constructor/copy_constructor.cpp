@@ -36,6 +36,6 @@ int main()
         is being copied to another object of class i.e wall 2  */
     cout<<"The area of Wall 2 is : " <<wall2.calculate_area() <<endl; //Print area of wall 2
     
-
+ 
 return 0;
 }
