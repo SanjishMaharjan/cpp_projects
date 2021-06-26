@@ -18,10 +18,10 @@ class myclass{
 
 int main()
 {
-    myclass classes[4];
+    myclass classes[4]; // Array of "classes" object
     for (int  i = 0; i < 4; i++)
     {
-        classes[i].setx(i);
+        classes[i].setx(i); // Calling method through array
     
     }
     for (int  i = 0; i < 4; i++)
