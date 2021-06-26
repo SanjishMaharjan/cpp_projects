@@ -2,40 +2,58 @@
 
 #include<iostream>
 using namespace std;
-class input
+class num1
 {
-    friend class display; // Declaring the friend class so that it can access the private data
+    friend class sum; // Declaring the friend class so that it can access the private data
 
     private :
-      double num1,num2,sum;
+      double n1;
 
     public :
-        input(double a,double b)    // A constructor to assign the values 
+        void setdata(double a)    
         {
-            num1=a;
-            num2=b;
+            n1=a;
         }
-        void calcsum(){         //Method to calculate sum
-                sum=num1+num2;
-        }
+        
 
 };
-// It is a class that we have declared as friend so it has access over our data
-class display{   
+
+class num2{  
+   
+    friend class sum;   // Declaring the friend class so that it can access the private data
+
+   private :
+     double n2;
    
    public :
-    void setdata(input i){   // Here we have object i of class input
-        cout<<"Your number are  "<<i.num1 <<"\n"<<i.num2<<endl;
-        cout<<"The sum is :"<< i.sum<<endl;
+       void setdata(double b)    
+        {
+            n2=b;
+        }
+   
+};
+
+class sum{   // It is a class that we have declared as friend so it has access over our data
+    
+    private :
+        double sum;
+    
+    public :
+    void calcsum(num1 s1, num2 s2){  
+        sum=s1.n1+s2.n2;
+        cout<<"The sum is : "<<sum<<endl;
     }
+    
 };
 
 int main()
 {
-    input num(45,7);  // Giving input through constructor
-    num.calcsum();   // Calling method calcsum
-    display sum;     // Creating an object "sum" of display class
-    sum.setdata(num);
-
+    num1 x;   // Creating object of num1
+    x.setdata(45);  
+    num2 y;  // Creating object of num2
+    y.setdata(55);  
+    sum sfinal;  // Creating object of sum
+    sfinal.calcsum(x, y); // Calling method calcsum
+    
 return 0;
 }
