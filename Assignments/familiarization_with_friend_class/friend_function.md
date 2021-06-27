@@ -3,12 +3,12 @@
 
 A friend function is declared inside the class with a friend keyword preceding as shown below.
 ```c++
-## class className{
+ class className{
 
- ## ……
+  ……
 
- ## friend returnType functionName(arg list);
-## };
+  friend returnType functionName(arg list);
+ };
 ```
 As shown above, the friend function is declared inside the class whose private and protected data members are to be accessed. The function can be defined anywhere in the code file and we need not use the keyword friend or the scope resolution, operator.
 
