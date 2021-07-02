@@ -24,3 +24,9 @@ Following is the list of operators which can be overloaded −
 |=	*=	<<=	>>=	[]	()
 ->	->*	new	new []	delete	delete []
 ```
+
+Following is the list of operators, which can not be overloaded −
+
+```C++
+::  	*   	?:
+```
