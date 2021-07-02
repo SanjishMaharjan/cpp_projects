@@ -1,4 +1,4 @@
-#include(iostream)
+#include<iostream>
 using namespace std;
 class unary{
 int a,b,c;
@@ -7,7 +7,7 @@ void getdata(int x,int y,int z)
 {
     a=x;
     b=y;
-    c=z;
+    c=z; 
 }
 void operator -(){
     a=-a;
@@ -15,15 +15,15 @@ void operator -(){
     c=-c;
 }
 void setdata(){
-    cout<<"The value of a is "<<a;
-    cout<<"The value of b is "<<b;
-    cout<<"The value of c is "<<c;
+    cout<<"The value of a is "<<a<<endl;
+    cout<<"The value of b is "<<b<<endl;
+    cout<<"The value of c is "<<c<<endl;
 }
 };
 int main(){
     unary u1,u2;
     u1.getdata(12,3,-9);
-    u1.getdata(-91,-7,0);
+    u2.getdata(-91,-7,8);
     cout<<"Before using unary operator"<<endl;
     u1.setdata();
     u2.setdata();
