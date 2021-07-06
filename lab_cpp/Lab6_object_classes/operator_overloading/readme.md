@@ -28,5 +28,37 @@ Following is the list of operators which can be overloaded −
 Following is the list of operators, which can not be overloaded −
 
 ```C++
-::  	*   	?:
+::  	*   .	?:
 ```
+
+# Cases
+
+## Member Function [here, calling object is passed implecetly]
+
+- **Unary Operator Overloading** [Single Operand, *No argument* - calling operand will pass implecetly ]
+- **Binary Operator Overloading** [Two Operands, *One argument* - calling operand will pass implecetly, second operand should be passes during call as an argument]
+
+## Non Member Function [Friend Function, calling object should be specified]
+
+- **Unary Operator Overloading** [Single Operand, One argument]
+- **Binary Operator Overloading** [Two Operand, Two argument]
+
+## Syntax for Operator Overloading
+
+To overload an operator, we use a special operator function. We define the function inside the class whose objects/variables we want the overloaded operator to work with.
+
+```c++
+class className {
+    ... .. ...
+    public
+       returnType operator symbol (arguments) {
+           ... .. ...
+       }
+    ... .. ...
+};
+```
+
+- **returnType** is the return type of the function.
+- **operator** is a keyword.
+- **symbol** is the operator we want to overload. Like: +, <, -, ++, etc.
+- **arguments** is the arguments passed to the function.
