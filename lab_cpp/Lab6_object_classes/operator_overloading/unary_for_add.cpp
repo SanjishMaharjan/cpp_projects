@@ -13,11 +13,11 @@ public:
     }
     /*Syntax for operator overloading:
      return type operator +/-() */
-    void operator+()
+    void operator++()
     {
-        x = +x;
-        y = +y;
-        z = +z;
+        x = ++x;
+        y = ++y;
+        z = ++z;
     }
     void display()
     {
@@ -29,11 +29,11 @@ public:
 int main()
 {
     unary u1;
-    u1.getdata(-2, -4, 5); // The sign of - doesn't changes as + operator doesn't change sign
+    u1.getdata(2, 4, 5);
     cout << "The number before unary operator are " << endl;
     u1.display();
-    +u1; // Calling the unary operator by simply adding operator sign infront of the object
-    cout << "The number after unary operator are " << endl;
+    ++u1; // Calling the unary operator by simply adding perfix operator sign infront of the object
+    cout << "The number after unary operator (value increases by 1) are " << endl;
     u1.display();
     return 0;
 }
