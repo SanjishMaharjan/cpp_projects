@@ -2,9 +2,7 @@
 
 Inheritance is a fundamental concept of object-oriented programming.
 
-Inheritance in C++ ,When one class can access all the properties and characteristics of another class, it is known as inheritance. In more technical words, we can say that when an object of base class acquires all the properties of the parent object automatically and we can access the features of the parent class with the help of child’s object then it is an inheritance.
-
-The class whose members are inherited are called base or parent class or superclass, and the class who inherits those properties are usually known as derived or child class or subclass.
+When one class can access all the properties and characteristics of another class, it is known as inheritance. In more technical words, we can say that when an object of base class acquires all the properties of the parent object automatically and we can access the features of the parent class with the help of child’s object then it is an inheritance.
 
 # Advantages
 
@@ -24,15 +22,7 @@ With inheritance, we have the feature to override the functions present in the b
 
 We can extend the base class logic depending on the business requirement of the derived class.
 
-# Types of Inheritance in C++
-
-There are 5 types of inheritance:
-
-- Single Inheritance
-- Multiple Inheritance
-- Hierarchical Inheritance
-- Multilevel Inheritance
-- Hybrid Inheritance
+#### The class whose members are inherited are called base or parent class or superclass, and the class who inherits those properties are usually known as derived or child class or subclass.
 
 # Base Class
 
@@ -45,6 +35,32 @@ In simple words, the derived class is a class which is derived from a base class
 ### Syntax of Derived class
 
 class derived_class :: visibility_mode base_class
+
+# Modes of inheritance
+
+# Public mode
+
+If we derive a child class from a public parent class. Then the public member of the parent class becomes a public member for the child class and protected members of parent class becomes protected members of the child class.
+
+# Protected mode
+
+If we derive child class from a protected base class, then the public, as well as a protected member of the parent class, becomes the protected members of the child class.
+
+# Private mode
+
+If we derive a child class from a private base class, then the public, as well as protected members, become private for the derived class.
+
+- Private members of a base class cannot be directly accessed in the derived class in any circumstance.
+
+# Types of Inheritance in C++
+
+There are 5 types of inheritance:
+
+- Single Inheritance
+- Multiple Inheritance
+- Hierarchical Inheritance
+- Multilevel Inheritance
+- Hybrid Inheritance
 
 # Single Inheritance
 
@@ -82,19 +98,3 @@ It is an inheritance in which we usually derive more than one derived class from
 ![Alt Text](https://appdividend.com/wp-content/uploads/2019/07/Hierarchical-Inheritance.png)
 
 Hierarchical Inheritance
-
-# Modes of inheritance
-
-# Public mode
-
-If we derive a child class from a public parent class. Then the public member of the parent class becomes a public member for the child class and protected members of parent class becomes protected members of the child class.
-
-# Protected mode
-
-If we derive child class from a protected base class, then the public, as well as a protected member of the parent class, becomes the protected members of the child class.
-
-# Private mode
-
-If we derive a child class from a private base class, then the public, as well as protected members, become private for the derived class.
-
-- Private members of a base class cannot be directly accessed in the derived class in any circumstance.
