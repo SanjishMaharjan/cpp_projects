@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-class Sports_Cars
+class Sports_Cars // It is the 1st parent Class
 {
 
 public:
@@ -13,7 +13,7 @@ public:
         cout << "Destructor of Sports_Cars " << endl;
     }
 };
-class Super_Cars
+class Super_Cars // It is the 2nd parent Class
 {
 public:
     Super_Cars()
@@ -26,7 +26,8 @@ public:
     }
 };
 class BMW : protected Sports_Cars, protected Super_Cars
-
+//Here BMW is derived  class of both 1st and 2nd class. synatx:
+//class Derived : access_specifier 1st parent class,access_specifier 2nd parent class
 {
 public:
     BMW()
