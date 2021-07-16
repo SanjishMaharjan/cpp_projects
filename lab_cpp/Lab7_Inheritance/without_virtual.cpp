@@ -1,3 +1,5 @@
+//A program to call function of base class by objects of derived class with application of pointer
+
 #include <iostream>
 using namespace std;
 class Shapes
