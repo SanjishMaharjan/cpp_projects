@@ -18,7 +18,7 @@ int main()
     //here, T1 will be float and T2 will be integer.
     testfunc<int, float>(inum);
     //here,T1 will be integer and T2 will be float.
-    //inum integer declared vako vaye pani explicit specification overrides,so inum gets converted to float.
+    //inum integer declared explicit so specification overrides,so inum gets converted to float.
     testfunc<float, int>(inum);
     return 0;
 }
