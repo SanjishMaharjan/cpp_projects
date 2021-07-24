@@ -7,7 +7,7 @@ T1 testfunc(T2 a) //template function
 {
     T1 b;
     b = static_cast<T1>(a);
-    return b;
+    cout << b << endl;
 }
 
 int main()
