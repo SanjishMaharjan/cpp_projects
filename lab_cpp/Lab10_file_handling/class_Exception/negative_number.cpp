@@ -7,7 +7,7 @@ private:
     double num;
 
 public:
-    class NEG //A class to call its objects
+    class NEG //A class to call its object
     {
     };
     void readnum()
@@ -19,7 +19,7 @@ public:
     {
         if (num < 0)
         {
-            throw NEG(); // To remove the exception we throw a dummy object
+            throw NEG(); // To remove the exception we throw a anonymous object to remove the use of many temp variables
         }
         else
         {
