@@ -2,7 +2,9 @@
 
 An exception is a problem that arises during the execution of a program. A C++ exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero.
 
-### There are two types of exceptions: a)Synchronous
+### There are two types of exceptions:
+
+a)Synchronous
 
 b)Asynchronous(Ex:which are beyond the program’s control, Disc failure etc)
 
@@ -14,9 +16,9 @@ Exceptions provide a way to transfer control from one part of a program to anoth
 
 - try − A try block identifies a block of code for which particular exceptions will be activated. It's followed by one or more catch blocks.
 
-* Assuming a block will raise an exception, a method catches an exception using a combination of the try and catch keywords.
+Assuming a block will raise an exception, a method catches an exception using a combination of the try and catch keywords.
 
-* A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code, and the syntax for using try/catch as follows −
+A try/catch block is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code, and the syntax for using try/catch as follows −
 
 ```C++
 try {
